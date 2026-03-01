@@ -1,13 +1,39 @@
-body { 
-    margin: 0; padding: 0; background: #000; 
-    overflow: hidden; font-family: sans-serif; 
-    color: #fff; touch-action: none; 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #050505;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden; /* Prevents scrollbars */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 #ui-minimal {
-    position: absolute; top: 30px; left: 30px;
-    pointer-events: none; z-index: 10;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    pointer-events: none; /* Allows clicks to pass through to the canvas */
+    transition: opacity 1s ease;
 }
 
-h1 { font-size: 2rem; letter-spacing: 0.5em; margin: 0; color: #ffffff; }
-#status { font-size: 1rem; opacity: 0.5; margin-top: 8px; letter-spacing: 0.2em; }
+h1 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+#status {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: #888;
+}
