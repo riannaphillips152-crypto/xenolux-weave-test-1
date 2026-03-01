@@ -3,8 +3,9 @@ body {
     padding: 0;
     background-color: #050505;
     color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
-    overflow: hidden; /* Prevents scrollbars */
+    /* Updated to Roboto */
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,18 +23,22 @@ canvas {
     position: relative;
     z-index: 10;
     text-align: center;
-    pointer-events: none; /* Allows clicks to pass through to the canvas */
+    pointer-events: none; 
     transition: opacity 1s ease;
 }
 
 h1 {
     font-size: 2rem;
-    letter-spacing: 5px;
+    font-weight: 700;
+    letter-spacing: 6px;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 #status {
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    color: #888;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #aaaaaa;
+    text-transform: uppercase;
 }
